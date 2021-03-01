@@ -23,11 +23,17 @@ namespace Hello_world
         public MainWindow()
         {
             InitializeComponent();
+            lblcounter.Content = iNumber;
         }
+
+        int iNumber = 0;
 
         private void btnPush_Click(object sender, RoutedEventArgs e)
         {
             lblResult.Content = "Hello world";
+            iNumber++;
+            lblcounter.Content = iNumber;
         }
+
     }
 }
