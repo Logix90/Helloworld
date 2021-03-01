@@ -24,5 +24,10 @@ namespace Hello_world
         {
             InitializeComponent();
         }
+
+        private void btnPush_Click(object sender, RoutedEventArgs e)
+        {
+            lblResult.Content = "Hello world";
+        }
     }
 }
